@@ -1,0 +1,17 @@
+{
+    "name": "rainingcows-extractor",
+    "version": "0.0.1",
+    "description": "A commodities/weather comparison",
+    "author": "Michael Chiang",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Mike-C25/RainingCows.git"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
