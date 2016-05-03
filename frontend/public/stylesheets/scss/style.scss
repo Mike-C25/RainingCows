@@ -1,0 +1,96 @@
+@import "compass";
+@import "normalize";
+@import "breakpoint";
+@import "susy";
+
+// ,    
+//     debug: (
+//         image: show-columns,
+//         output: overlay
+//     )
+
+// Configuring Susy Defaults
+$susy: ( 
+    global-box-sizing: border-box, 
+    gutter-override: no-gutters,
+    gutter-position: inside,
+    use-custom: (
+        rem: true
+    )
+);
+
+$container-max-width: 1200px;
+
+@include border-box-sizing;
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700);
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+nav {
+  @include transition(all .333s cubic-bezier(0.215,.61,.355,1));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9000;
+  text-align: right;
+  ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        padding: 2rem;
+        color: white;
+      }
+    }
+  }
+  &.floating {
+    @include box-shadow(0 0 10px 0px rgba(0, 0, 0, 0.16));
+    background-color: rgba(255, 255, 255, 0.75);
+    ul {
+      li {
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+section {
+  position: relative;
+}
+
+.container {
+    @include container;
+    @include clearfix;
+
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: $container-max-width;
+    &:after {
+        @include clearfix;
+    }
+    .row {
+        &:after {
+            @include clearfix;
+        }
+    }
+}
+
+@import "home";
+@import "graph";
+@import "source";
+@import "technologies";

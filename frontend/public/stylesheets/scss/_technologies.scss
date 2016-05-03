@@ -1,0 +1,62 @@
+section#tech {
+       height: 140vh;
+    color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    
+    // background-image: url(http://www.energyrealities.org/wp-content/uploads/2014/01/lightning.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+      color: #000033;
+    
+    .box {
+        @include span(full);
+        text-align:center;
+        
+        // For screens wider that 768
+        @include breakpoint(768px) {
+            @include span(1 of 3);
+            text-align:left;
+        }
+       
+    }
+    
+     .tech-body-l{
+         
+         .tech-logo{
+             width:75px;
+             height:75px;
+            
+             text-align:center;
+         }
+         .tech-logo-q{
+            width: 55px;
+            height: 55px;
+            text-align: center;
+            margin-top: 30px;
+         }
+         .tech-logo-a{
+             width:100px;
+             height:40px;
+             text-align:center;
+             margin-top: 35px;
+         }
+        @include breakpoint(768px){
+            @include span(1 of 2);
+            text-align:center;
+          
+        }
+     }
+        .tech-body-r{
+             @include breakpoint(768px){
+                @include span(1 of 2);
+                text-align:center;
+        }
+    }
+    
+    section#api{
+      
+    }
+    section#frame{
+          }
+}
