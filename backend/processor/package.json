@@ -1,17 +1,21 @@
 {
-    "name": "rainingcows-processor",
-    "version": "0.0.1",
-    "description": "A commodities/weather comparison",
-    "author": "Michael Chiang",
-    "scripts": {
-        "start": "node app.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Mike-C25/RainingCows.git"
-    },
-    "dependencies": {
-    },
-    "devDependencies": {
-    }
+  "name": "rainingcows-processor",
+  "version": "0.0.1",
+  "description": "A commodities/weather comparison",
+  "author": "Michael Chiang",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mike-C25/RainingCows.git"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "aws-sdk": "^2.3.7",
+    "lodash": "^4.11.2",
+    "minimist": "^1.2.0",
+    "request": "^2.72.0"
+  },
+  "devDependencies": {}
 }

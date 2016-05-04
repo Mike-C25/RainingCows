@@ -1,26 +1,4 @@
-/*
 
-Example Usage:
-
-node app.js --noaaKey rziyyZBpOQlVDGRGUdyluMmUrGkxjUFJ --cmd noaaRequest --state "Alaska" --year 2015 --overwrite true/false
-node app.js --noaaKey wxAttCfTwYnvVmjKlRyFuMcmoymfuxKi --cmd noaaRequest --state "Alaska" --year 2015 --overwrite true/false
-node app.js --noaaKey WPQZcmGKBQhwTnxjOMjXxTHfJdoBLDqE --cmd noaaRequest --state "Alaska" --year 2015 --overwrite true
-
-node app.js --key asdf --secret fdsa --cmd setupTable --type noaa
-node app.js --key asdf --secret fdsa --cmd setupTable --type commodity
-
-node app.js --key asdf --secret fdsa --cmd noaaRequest --iscompleted true/false --noaaKey adsf
-node app.js --key asdf --secret fdsa --cmd noaaRequest --state nj --year 2016
-node app.js --key asdf --secret fdsa --cmd noaaRequest --request NorthEast_New_Jersey_01_2016
-
-node app.js --key asdf --secret fdsa --cmd noaaRequestAdd --state nj --month 01 --year 2016
-
-node app.js --key asdf --secret fdsa --cmd quandlRequest --symbol CME:GNF -year 2016
-node app.js --key asdf --secret fdsa --cmd quandlRequest --symbol CME:GNF -year 2016
-
-node app.js --key asdf --secret fdsa --cmd quandlRequestAdd --symbol CME:GNF -year 2017
-
-*/
 
 var AWS = require('aws-sdk');
 var async = require("async");
@@ -86,5 +64,3 @@ switch (argv.cmd) {
 
 
 
-// Quandl API
-// API KEY: ZqWstC3utJ_y5ij3gExN

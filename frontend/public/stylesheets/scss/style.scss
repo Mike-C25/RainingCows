@@ -51,16 +51,21 @@ nav {
         display: inline-block;
         padding: 2rem;
         color: white;
+        text-decoration:none;
       }
     }
   }
   &.floating {
     @include box-shadow(0 0 10px 0px rgba(0, 0, 0, 0.16));
     background-color: rgba(255, 255, 255, 0.75);
+        margin-top: -5px;
     ul {
       li {
         a {
           color: black;
+          text-decoration:none;
+          font-weight:bold;
+          
         }
       }
     }
@@ -88,6 +93,10 @@ section {
             @include clearfix;
         }
     }
+}
+
+.copyright{
+  font-size:10px;
 }
 
 @import "home";

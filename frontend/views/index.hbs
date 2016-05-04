@@ -7,15 +7,15 @@
 <div>
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li>
                 <a href="#tech">Technologies</a>
                 <ul>
                     <li>
-                        <a href="#api"></a>
+                        <a href="#api">APIs</a>
                     </li>
                     <li>
-                        <a href="#frame"></a>
+                        <a href="#frame">Frameworks</a>
                     </li>
                 </ul>
             </li>
@@ -27,41 +27,44 @@
         <div class="container">
             <a id="home"></a>
             <h1>Raining Cows</h1>
-            <p>Discovering the correlation between the climate and the economy.</p>
+            <div class="intro">
+                <h3>Discovering the correlation between the climate and the economy. Making data beautiful and understandable</h3>
+
+            </div>
         </div>
     </section>
     <section id="tech">
         <div class="container">
             <a id="tech"></a>
-            <h1>Technologies Used</h1>
+            <h2>Technologies</h2>
             <section id="api">
                 <a id="api"></a>
                 <h4>API's</h4>
                 <div class="box">
                     <div class="tech-body-l">
-                        <img class="tech-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/NOAA_logo.svg/2000px-NOAA_logo.svg.png" />
+                        <img class="tech-logo" src="../images/logo-noaa.png" />
                     </div>
                     <div class="tech-body-r round">
                         <h2>NOAA</h2>
-                        <p>For Dem Weather Datas</p>
+                        <p>Also known as the National Oceanic and Atmospheric Administration. This organization provides daily, monthly, and yearly weather data of a large variety.</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="tech-body-l">
-                        <img class="tech-logo-q round" src="https://upload.wikimedia.org/wikipedia/en/2/26/Quandl-logo.png" />
+                        <img class="tech-logo-q round" src="../images/logo-quandl.png" />
                     </div>
                     <div class="tech-body-r">
                         <h2>Quandl</h2>
-                        <p>All that great commodities data</p>
+                        <p>An API that contains mass commodities and market data.</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="tech-body-l">
-                        <img class="tech-logo-a round" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/1280px-AmazonWebservices_Logo.svg.png" />
+                        <img class="tech-logo-a round" src="../images/logo-aws.png" />
                     </div>
                     <div class="tech-body-r">
                         <h2>Amazon Web Services</h2>
-                        <p>For DynamoDB, EC2</p>
+                        <p>An array of services provided by Amazon. Raining Cow Utilizes AWS's DynamoDB, EC2, RDS, and S3</p>
                     </div>
                 </div>
             </section>
@@ -70,7 +73,7 @@
                 <h4>FrameWorks</h4>
                 <div class="box">
                     <div class="tech-body-l">
-                        <img src="" />
+                        <img class="tech-logo" src="../images/logo-nodejs.png" />
                     </div>
                     <div class="tech-body-r">
                         <h2>Node.js</h2>
@@ -79,7 +82,7 @@
                 </div>
                 <div class="box">
                     <div class="tech-body-l">
-                        <img src="" />
+                        <img class="tech-logo" src="../images/logo-d3.png" />
                     </div>
                     <div class="tech-body-r">
                         <h2>D3.js</h2>
@@ -88,37 +91,62 @@
                 </div>
                 <div class="box">
                     <div class="tech-body-l">
-                        <img src="" />
+                        <img class="tech-logo" src="../images/logo-compass.png" />
+                        <img class="tech-logo" src="../images/logo-sass.png" />
                     </div>
                     <div class="tech-body-r">
                         <h2>Compass.js/SASS.js</h2>
-                        <p>Compass.js and sass.js helped create a cleaner css when developing this website.</p>
+                        <p>Compass.js and SASS.js helped create a cleaner css when developing this website.</p>
                     </div>
                 </div>
             </section>
-
         </div>
     </section>
     <section id="graph">
         <div class="container">
             <a id="graph"></a>
             <h1>Demo</h1>
+            <div class="stateControl">
+                <h1>Select Region -> State</h1>
+            </div>
+            <div class="chart">
+                <h1>Correlation chart</h1>
+            </div>
+            <div class="commodityControl">
+                <h1>Select Commodity</h1>
+            </div>
+
+            <div class="statTable">
+                <h1>Table o' Stats</h1>
+            </div>
         </div>
     </section>
     <section id="source">
         <div class="container">
             <a id="source"></a>
             <h1>Source and References</h1>
+            <div class="box-s">
+                <a href="https://github.com/Mike-C25/RainingCows.git"><img class="git-logo" src="../images/logo-git.png" />
+                    <h3>Try me on Git!</h3></a>
+
+            </div>
+            <div class="box-s">
+                <img class="rutgers-logo" src="../images/logo-rutgers.png" />
+            </div>
+
         </div>
     </section>
     <footer>
         <div class="container">
-            <p>Copyright &copy; 2016 Michael Chiang</p>
-            <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use,
-                copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-            <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-            <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-                HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+            <div class="copyright">
+                <p>Copyright &copy; 2016 Michael Chiang</p>
+                <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to
+                    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+                <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+                    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+            </div>
         </div>
     </footer>
 </div>

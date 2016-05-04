@@ -1,13 +1,16 @@
 section#tech {
-       height: 140vh;
     color: rgba(255, 255, 255, 0.1);
     text-align: center;
+    background-color: grey;
+    text-align: center;
     
-    // background-image: url(http://www.energyrealities.org/wp-content/uploads/2014/01/lightning.jpg);
+    background-image: url(https://static.pexels.com/photos/37487/pexels-photo-37487.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-      color: #000033;
+    color:white;
+    
+    @include clearfix;
     
     .box {
         @include span(full);
@@ -55,8 +58,9 @@ section#tech {
     }
     
     section#api{
-      
+      @include clearfix;
     }
     section#frame{
+        @include clearfix;
           }
 }
