@@ -39,12 +39,16 @@ nav {
   left: 0;
   right: 0;
   z-index: 9000;
-  text-align: right;
+  h1{
+    float:left;
+  }
   ul {
     display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: right;
+    float:right;
     li {
       display: inline-block;
       a {
