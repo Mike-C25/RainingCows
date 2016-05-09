@@ -1,3 +1,94 @@
 section#graph{
+   .chart {
+        font: 10px sans-serif;
+    }
+    
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+    
+    .x.axis path {
+        display: none;
+    }
+    
+    .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+    
+    .line.min {
+        stroke: blue;
+        display: none;
+    }
+    
+    .line.max {
+        stroke: orange;
+        display: none;
+    }
+    
+    .line.avg {
+        stroke: green;
+        display: none;
+    }
+    
+    .line.comm {
+        stroke: black;
+    }
+    
+    rect.pane {
+        cursor: move;
+        fill: none;
+        pointer-events: all;
+    }
+    
+    .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+    
+    .focus circle {
+        fill: none;
+        stroke: steelblue;
+    }
+    
+    
+    .table-controller{
+        padding:10px;
+          .table-box{
+        @include span(1 of 2);
+    }
 
+        .table-box table{
+            display:block;
+ 
+            width:400px;
+            height:250px;
+            overflow-y:scroll;
+        }
+        table, th, td{
+            border: 1px solid;
+            width:600px;
+            margin-left:80px;
+        }
+        .weathertable td:hover{
+            background-color:#d3d3d3;
+        }
+        
+        .commoditiesTable td:hover{
+            background-color:#d3d3d3;
+        }
+        
+    }
+    
+    .stat-holder{
+        display:block;
+        float:left;
+    }
+    
+  
+    
 }

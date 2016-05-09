@@ -1,6 +1,8 @@
 section#source{
+    
+    background-image: url(https://static.pexels.com/photos/26998/pexels-photo.jpg);
     .box-s{
-    display:inline-block;
+    display:block;
     text-align:center;
         a{
             text-decoration:none;
@@ -14,11 +16,11 @@ section#source{
 .git-logo{
     height:150px;
     width:150px;
-    padding-left: 300px;
+
 }
 
 .rutgers-logo{
+    float:left;
     height:50px;
-    float:right;
 }
 
