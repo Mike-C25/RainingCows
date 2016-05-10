@@ -1,6 +1,16 @@
 section#source{
+   footer{
+        .container{
+        background-image: -o-linear-gradient(bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+background-image: -moz-linear-gradient(bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+background-image: -webkit-linear-gradient(bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+background-image: -ms-linear-gradient(bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+background-image: linear-gradient(to bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+}
+   }
     
-    background-image: url(https://static.pexels.com/photos/26998/pexels-photo.jpg);
+    // background-image: url(https://static.pexels.com/photos/26998/pexels-photo.jpg);
+    // background-color: rgba(89, 90, 92, 0.25);
     .box-s{
     display:block;
     text-align:center;
@@ -20,7 +30,14 @@ section#source{
 }
 
 .rutgers-logo{
-    float:left;
+    // float:left;
+    padding-top:15px;
     height:50px;
+    display:block;
+}
+
+.copyright{
+    display:block;
+    
 }
 

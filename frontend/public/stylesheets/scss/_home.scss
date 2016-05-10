@@ -1,16 +1,18 @@
 section#home {
-    height: 100vh;
-    background-color: black;
+
+   
     text-align: center;
-    
+    .container{
+            height: 65vh;
+         background-color: black;
     // background-image: url(../images/wheat.png);
     // background-image: url(https://static.pexels.com/photos/55787/pexels-photo-55787.jpeg);
-   
-       background-image: url(https://static.pexels.com/photos/55787/pexels-photo-55787.jpeg);
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+          background-image: url(/images/rooster-bg.png);
+          background-size:cover;
+          background-repeat:no-repeat;
+          background-position: center center;
+          
+    }
     @include clearfix;
     h1 {
         text-align:left;

@@ -1,15 +1,18 @@
 section#tech {
-    color: rgba(255, 255, 255, 0.1);
+  
     text-align: center;
-    background-color: grey;
+ .container{
+      background-color: rgba(255, 255, 255, .1);
     text-align: center;
     
-    background-image: url(https://static.pexels.com/photos/37487/pexels-photo-37487.jpeg);
+    // background-image: url(https://static.pexels.com/photos/37487/pexels-photo-37487.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color:white;
+    color:#415590;
+       
     
+ }
     @include clearfix;
     
     .box {
@@ -20,6 +23,7 @@ section#tech {
         @include breakpoint(768px) {
             @include span(1 of 3);
             text-align:left;
+                margin-left: -15px;
         }
        
     }

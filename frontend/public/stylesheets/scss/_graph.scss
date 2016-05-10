@@ -1,4 +1,12 @@
 section#graph{
+ 
+  .container{
+   background-image: -o-linear-gradient(bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+background-image: -moz-linear-gradient(bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+background-image: -webkit-linear-gradient(bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+background-image: -ms-linear-gradient(bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+background-image: linear-gradient(to bottom, #769DBF 0%, #ABC3D1 100%, #8F8C8F 100%);
+  }
    .chart {
         font: 10px sans-serif;
     }
@@ -55,6 +63,10 @@ section#graph{
         stroke: steelblue;
     }
     
+    .table-plus{
+        float:right;
+    }
+    
     
     .table-controller{
         padding:10px;
@@ -71,8 +83,11 @@ section#graph{
         }
         table, th, td{
             border: 1px solid;
-            width:600px;
-            margin-left:80px;
+            width: 600px;
+            margin-left: 80px;
+        }
+        td{
+                 padding: 10px 0px 0px 10px;
         }
         .weathertable td:hover{
             background-color:#d3d3d3;
@@ -82,13 +97,28 @@ section#graph{
             background-color:#d3d3d3;
         }
         
+        
     }
     
     .stat-holder{
-        display:block;
-        float:left;
+    margin: 10px 0px 0px 110px;
+    padding: 0px 0px 40px 0px;
+    display: block;
+    float: left;
+    width: 80%;
+    border: solid 1px;
+        h1{
+            text-align:center;
+            margin:0px auto;
+            padding:0px;
+        }
+        div{
+            padding-left:30px;
+        }
     }
     
-  
+  .col-two{
+   @include span(1 of 2);   
+  }
     
 }
