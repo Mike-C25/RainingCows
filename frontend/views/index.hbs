@@ -5,377 +5,372 @@
         - let the magic happen
 --}}
 <div>
-    <nav>
-            <h3>Raining Cows</h3>
+  <nav>
+    <h3>Raining Cows</h3>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li>
+        <a href="#tech">Technologies</a>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li>
-                <a href="#tech">Technologies</a>
-                <ul>
-                    <li>
-                        <a href="#api">APIs</a>
-                    </li>
-                    <li>
-                        <a href="#frame">Frameworks</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#graph">Graph</a></li>
-            <li><a href="#source">Sources</a></li>
+          <li>
+            <a href="#api">APIs</a>
+          </li>
+          <li>
+            <a href="#frame">Frameworks</a>
+          </li>
         </ul>
-    </nav>
-    <section id="home">
-        <div class="container">
-            <a id="home"></a>
-            <div class="intro">
-                <h3>Discovering the correlation between the climate and the economy.</h3><h4> Making data interactive and understandable</h4>
+      </li>
+      <li><a href="#graph">Graph</a></li>
+      <li><a href="#source">Sources</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <div class="container">
+      <a id="home"></a>
+      <div class="intro">
+        <h3>Discovering the correlation between the climate and the economy.</h3>
+        <h4> Making data interactive and understandable</h4>
 
-            </div>
+      </div>
+    </div>
+  </section>
+  <section id="tech">
+    <div class="container">
+      <a id="tech"></a>
+      <h2>Technologies</h2>
+      <section id="api">
+        <a id="api"></a>
+        <h4>API's</h4>
+        <div class="box">
+          <div class="tech-body-l">
+            <a href="http://www.ncdc.noaa.gov/cdo-web/webservices/v2"></a><img class="tech-logo" src="../images/logo-noaa.png" /></a>
+          </div>
+          <div class="tech-body-r round">
+            <h2>NOAA</h2>
+            <p>Also known as the National Oceanic and Atmospheric Administration. This organization provides daily, monthly, and yearly weather data of a large variety.</p>
+          </div>
         </div>
-    </section>
-    <section id="tech">
-        <div class="container">
-            <a id="tech"></a>
-            <h2>Technologies</h2>
-            <section id="api">
-                <a id="api"></a>
-                <h4>API's</h4>
-                <div class="box">
-                    <div class="tech-body-l">
-                        <img class="tech-logo" src="../images/logo-noaa.png" />
-                    </div>
-                    <div class="tech-body-r round">
-                        <h2>NOAA</h2>
-                        <p>Also known as the National Oceanic and Atmospheric Administration. This organization provides daily, monthly, and yearly weather data of a large variety.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="tech-body-l">
-                        <img class="tech-logo-q round" src="../images/logo-quandl.png" />
-                    </div>
-                    <div class="tech-body-r">
-                        <h2>Quandl</h2>
-                        <p>An API that contains mass commodities and market data.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="tech-body-l">
-                        <img class="tech-logo-a round" src="../images/logo-aws.png" />
-                    </div>
-                    <div class="tech-body-r">
-                        <h2>Amazon Web Services</h2>
-                        <p>An array of services provided by Amazon. Raining Cow Utilizes AWS's DynamoDB, EC2, RDS, and S3</p>
-                    </div>
-                </div>
-            </section>
-            <section id="frame">
-                <a id="frame"></a>
-                <h4>FrameWorks</h4>
-                <div class="box">
-                    <div class="tech-body-l">
-                        <img class="tech-logo" src="../images/logo-nodejs.png" />
-                    </div>
-                    <div class="tech-body-r">
-                        <h2>Node.js</h2>
-                        <p>Node.js was used to import data and export data while also serving data to the frontend.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="tech-body-l">
-                        <img class="tech-logo" src="../images/logo-d3.png" />
-                    </div>
-                    <div class="tech-body-r">
-                        <h2>D3.js</h2>
-                        <p>A graphing framework used to project data collected into a clean slate for easier readability. </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="tech-body-l">
-                        <img class="tech-logo" src="../images/logo-compass.png" />
-                        <img class="tech-logo" src="../images/logo-sass.png" />
-                    </div>
-                    <div class="tech-body-r">
-                        <h2>Compass.js/SASS.js</h2>
-                        <p>Compass.js and SASS.js helped create a cleaner css when developing this website.</p>
-                    </div>
-                </div>
-            </section>
+        <div class="box">
+          <div class="tech-body-l">
+            <a href="https://www.quandl.com/docs/api"><img class="tech-logo-q round" src="../images/logo-quandl.png" /></a>
+          </div>
+          <div class="tech-body-r">
+            <h2>Quandl</h2>
+            <p>An API that contains mass commodities and market data.</p>
+          </div>
         </div>
-    </section>
-    <section id="graph">
-        <div class="container">
-            <a id="graph"></a>
-            <h1>Demo</h1>
-        <div class="chart"></div>
-            <div class="table-controller">
-                <div class="table-box">
-                    <table class="weathertable">
-                        <tr class="selected">
-                            <th>Weather Location Selection</th>
-                        </tr>
-                        <tr>
-                            <td>Entire United States<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Entire Contiental United States<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Alabama<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Alaska<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Arizona<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Arkansas<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>California<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Colorado<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Connecticut<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Delaware<span class="table-plus"> + </span></td>
-                        </tr>
-                           <tr>
-                            <td>Florida<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Georgia<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Hawaii<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Idaho<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Illinois<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Indiana<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Iowa<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Kansas<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Kentucky<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Louisiana<span class="table-plus"> + </span></td>
-                        </tr>
-                           <tr>
-                            <td>Maine<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Maryland<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Massachusetts<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Michigan<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Minnesota<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Mississippi<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Missouri<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Montana<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Nebraska<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Nevada<span class="table-plus"> + </span></td>
-                        </tr>
-                           <tr>
-                            <td>New Hampshire<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>New Jersey<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>New Mexico<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>New York<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>North Carolina<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>North Dakota<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Ohio<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Oklahoma<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Oregon<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Pennsylvania<span class="table-plus"> + </span></td>
-                        </tr>
-                           <tr>
-                            <td>Rhode Island<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>South Carolina<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>South Dakota<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Tennessee<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Texas<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Utah<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Vermont<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Virginia<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Washington<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>West Virginia<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Wisconsin<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Wyoming<span class="table-plus"> + </span></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="table-box">
-                     <table class="commoditiesTable">
-                          <tr>
-                            <th>Commodities Selection</th>
-                            <th>Date Range</th>
-                        </tr>
-                        <tr>
-                            <td>Corn</td>
-                            <td>1959-2016<span class="table-plus"> + </span></td>
-                            <span></span>
-                        </tr>
-                          <tr> 
-                            <td>Crude Oil</td>
-                            <td>1983-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Ethanol</td>
-                            <td>2011-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Gasoline</td>
-                            <td>2006-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Gold</td>
-                            <td>1975-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Hogs</td>
-                            <td>1970-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Live Cattle</td>
-                            <td>1965-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Natural Gas</td>
-                            <td>1990-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Soybeans</td>
-                            <td>1970-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                          <tr>
-                            <td>Wheat</td>
-                            <td>1959-2016<span class="table-plus"> + </span></td>
-                        </tr>
-                     </table>
-                </div>
-            </div>
-            
-            <div class="stat-holder">
-              <h1>Statistics</h1>
-              <div class="stat-box">
-                <div class="col-two">
-                  <div id="MNTM">Average Mean Air Temperature:</div>
-                  <div id="MMNT">Average Minimum Air Temperature:</div>
-                  <div id="MMXT">Average Maximum Air Temperature:</div>
-                  <div id="state">State(s):</div>
-                  <div id="region">Region:</div>
-                </div>
-                <div class="col-two">
-                  <div id="com-value">Commodity Value:</div>
-                  <div id="date">Date Range:</div>
-                  <div id="correlation">Correlation:</div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
+        <div class="box">
+          <div class="tech-body-l">
+            <a href="https://aws.amazon.com/"><img class="tech-logo-a round" src="../images/logo-aws.png" /></a>
+          </div>
+          <div class="tech-body-r">
+            <h2>Amazon Web Services</h2>
+            <p>An array of services provided by Amazon. Raining Cow Utilizes AWS's DynamoDB, EC2, RDS, and S3</p>
+          </div>
         </div>
-    </section>
-    
-    <section id="source">
-        <div class="container">
-            <a id="source"></a>
-            <h1>Source</h1>
-          
-          <div class="box-s">
-                <a href="https://github.com/Mike-C25/RainingCows.git"><img class="git-logo" src="../images/logo-github.png" />
-                    <h3>Try me on Git!</h3></a>
+      </section>
+      <section id="frame">
+        <a id="frame"></a>
+        <h4>FrameWorks</h4>
+        <div class="box">
+          <div class="tech-body-l">
+            <a href="https://nodejs.org/en/"><img class="tech-logo" src="../images/logo-nodejs.png" /></a>
+          </div>
+          <div class="tech-body-r">
+            <h2>Node.js</h2>
+            <p>Node.js was used to import data and export data while also serving data to the frontend.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="tech-body-l">
+            <a href="https://github.com/mbostock/d3/wiki"><img class="tech-logo" src="../images/logo-d3.png" /></a>
+          </div>
+          <div class="tech-body-r">
+            <h2>D3.js</h2>
+            <p>A graphing framework used to project data collected into a clean slate for easier readability. </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="tech-body-l">
+            <a href="http://compass-style.org/"><img class="tech-logo" src="../images/logo-compass.png" /></a>
+            <a href="http://sass-lang.com/"><img class="tech-logo" src="../images/logo-sass.png" /></a>
+          </div>
+          <div class="tech-body-r">
+            <h2>Compass.js/SASS.js</h2>
+            <p>Compass.js and SASS.js helped create a cleaner css when developing this website.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section id="graph">
+    <div class="container">
+      <a id="graph"></a>
+      <h1>Demo</h1>
+      <div class="chart"></div>
+      <div class="table-controller">
+        <div class="table-box">
+          <table class="weathertable">
+            <tr class="selected">
+              <th>Weather Location Selection</th>
+            </tr>
+            <tr>
+              <td>Entire United States<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Entire Contiental United States<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Alabama<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Alaska<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Arizona<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Arkansas<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>California<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Colorado<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Connecticut<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Delaware<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Florida<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Georgia<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Hawaii<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Idaho<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Illinois<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Indiana<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Iowa<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Kansas<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Kentucky<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Louisiana<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Maine<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Maryland<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Massachusetts<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Michigan<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Minnesota<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Mississippi<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Missouri<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Montana<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Nebraska<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Nevada<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>New Hampshire<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>New Jersey<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>New Mexico<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>New York<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>North Carolina<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>North Dakota<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Ohio<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Oklahoma<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Oregon<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Pennsylvania<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Rhode Island<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>South Carolina<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>South Dakota<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Tennessee<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Texas<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Utah<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Vermont<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Virginia<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Washington<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>West Virginia<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Wisconsin<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Wyoming<span class="table-plus"> + </span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-box">
+          <table class="commoditiesTable">
+            <tr>
+              <th>Commodities Selection</th>
+              <th>Date Range</th>
+            </tr>
+            <tr>
+              <td>Corn</td>
+              <td>1959-2016<span class="table-plus"> + </span></td>
+              <span></span>
+            </tr>
+            <tr>
+              <td>Crude Oil</td>
+              <td>1983-2016<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Ethanol</td>
+              <td>2011-2016<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Gasoline</td>
+              <td>2006-2016<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Gold</td>
+              <td>1975-2016<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Hogs</td>
+              <td>1970-2016<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Live Cattle</td>
+              <td>1965-2016<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Natural Gas</td>
+              <td>1990-2016<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Soybeans</td>
+              <td>1970-2016<span class="table-plus"> + </span></td>
+            </tr>
+            <tr>
+              <td>Wheat</td>
+              <td>1959-2016<span class="table-plus"> + </span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
 
-            </div>
-       
-            
-             
+      <div class="stat-holder">
+        <h1>Statistics</h1>
+        <div class="stat-box">
+          <div class="col-two">
+            <div id="MNTM">Average Mean Air Temperature:</div>
+            <div id="MMNT">Average Minimum Air Temperature:</div>
+            <div id="MMXT">Average Maximum Air Temperature:</div>
+            <div id="state">State(s):</div>
+            <div id="region">Region:</div>
+          </div>
+          <div class="col-two">
+            <div id="com-value">Commodity Value:</div>
+            <div id="date">Date Range:</div>
+            <div id="correlation">Correlation:</div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-    
+      </div>
+    </div>
+  </section>
+
+  <section id="source">
+    <div class="container">
+      <a id="source"></a>
+      <h1>Source</h1>
+
+      <div class="box-s">
+     <div class="github-card" data-github="Mike-C25/RainingCows" data-width="400" data-height="153" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+      </div>
+    </div>
     <footer>
-        <div class="container">
-              <div class="box-s">
-                <img class="rutgers-logo" src="../images/logo-rutgers.png" />
-            </div>
-          
-            <div class="copyright">
-                <p>Copyright &copy; 2016 Michael Chiang</p>
-                <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to
-                    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-                <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-                <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-                    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-
-            </div>
+      <div class="container">
+        <div class="box-s">
+          <img class="rutgers-logo" src="../images/logo-rutgers.png" />
         </div>
-    </footer>
-    </section>
-</div>
 
+        <div class="copyright">
+          <p>Copyright &copy; 2016 Michael Chiang</p>
+          <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy,
+            modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+          <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+          <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+            HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+        </div>
+      </div>
+    </footer>
+  </section>
+</div>
