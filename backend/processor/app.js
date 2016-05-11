@@ -1,48 +1,54 @@
+#!/usr/bin/env node
 
+var program = require('commander');
 
-var AWS = require('aws-sdk');
-var async = require("async");
-var argv = require('minimist')(process.argv.slice(2));
-// Get AWS credentials from env vars or arguments
+program
+	// .arguments('<file>')
+	.option('-k, --aws-key <key>', 'AWS Access Key')
+	.option('-s, --aws-secret <secret>', 'AWS Access Secret')
+	.option('-c, --command <command>', 'Command to execute (init, copy)')
+	.option('--database <database>', 'MySQL Database Configuration { host: localhost, user: root, password: pwd, database: mydb }')
+    .option('--file <file>', 'JSON Data File')
+	.option('--state <state>', 'Filter query by state ("New Jersey")')
+	.option('--year <year>', 'Filter query by year (2010 | all)')
+    .option('--requestid <requestid>', 'Select a single request')
+    .option('--iscompleted <iscompleted>', 'Select completed requests')
+    .option('--overwrite <overwrite>', 'Overwrite existing data')
+	.parse(process.argv);
 
-// BASH = export AWS_KEY=
+var options = program;
 
-var accessKeyId = process.env.AWS_KEY || argv['aws-key'];
-var secretAccessKey = process.env.AWS_SECRET || argv['aws-secret'];
+options['awsKey'] = options['awsKey'] || process.env.AWS_KEY;
+options['awsSecret'] = options['awsSecret'] || process.env.AWS_SECRET;
+options['database'] = (options['database'] ? JSON.parse(options['database']) : null);
 
-if (!accessKeyId || !secretAccessKey) {
-    throw new Error('AWS Key and Secret Required');
+if (!options['awsKey'] || !options['awsSecret']) {
+	throw new Error('AWS Key and Secret Required');
 }
 
-// Load AWS configurations
+if (!options['database']) {
+	throw new Error('MySQL Database Configuration Required');
+}
+
+var AWS = require('aws-sdk');
 
 AWS.config.update({
-    accessKeyId: accessKeyId,
-    secretAccessKey: secretAccessKey,
+    accessKeyId: options['awsKey'],
+    secretAccessKey: options['awsSecret'],
     region: 'us-east-1'
 });
 
-// Execute Command
+switch(options['command']) {
+	case 'init': 
 
-switch (argv.cmd) {
-    case 'noaaProcess':
-        
-        var noaa = require('./lib/noaa.js');
-        noaa.process(argv, AWS);
-        
-        break;
-        
-    case 'quandlProcess':
+		var lib = require('./lib/init.js')(options);
+		lib.execute();
 
-        var quandl = require('./lib/quandl.js');
-        quandl.process(argv, AWS);
+		break;
+	case 'copy':
 
-        break;
-    
-    default:
-        
-        console.log('Avaiable commands: noaaProcess, quandlProcess');
+		var lib = require('./lib/copy.js')(options);
+		lib.execute();
+
+		break;
 }
-
-
-

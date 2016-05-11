@@ -1,9 +1,6 @@
 //Dependencies
-var nmailer = require('nodemailer');
 var AWS = require('aws-sdk');
-var nschedule = require('node-schedule');
 var request = require('request');
-var fs = require('fs');
 var moment = require('moment');
 var async = require('async');
 var locations = require('../locations.js');
@@ -28,10 +25,6 @@ var dynamodbClient = new AWS.DynamoDB.DocumentClient();
 // Export
 
 var noaa = {};
-
-noaa.addRequst = function(options) {
-    
-}
 
 noaa.request = function(options) {
 
@@ -100,13 +93,11 @@ noaa.request = function(options) {
             }
         }
     }
- console.log(params);
     dynamodbClient.query(params, function(err, data) {
         if (err) {
             throw err;
         }
-// console.log(data);
-// return;
+
         var queries = [];
 
         console.log('Query succeeded. ' + data.Items.length + ' queries found.');

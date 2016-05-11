@@ -109,166 +109,23 @@
       <h1>Demo</h1>
       <div class="chart"></div>
       <div class="table-controller">
+        <div class="chart-controls">
+          <input id="maxTemp" type="checkbox" />
+          <label for="maxTemp">Show Max Temp</label>
+
+          <input id="avgTemp" type="checkbox" />
+          <label for="avgTemp">Show Avg Temp</label>
+
+          <input id="minTemp" type="checkbox" />
+          <label for="minTemp">Show Min Temp</label>
+
+          <input id="monthTrend" type="checkbox" checked/>
+          <label for="monthTrend">Show Month Trends</label>
+        </div>
         <div class="table-box">
-          <table class="weathertable">
+          <table class="weatherTable">
             <tr class="selected">
               <th>Weather Location Selection</th>
-            </tr>
-            <tr>
-              <td>Entire United States<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Entire Contiental United States<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Alabama<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Alaska<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Arizona<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Arkansas<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>California<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Colorado<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Connecticut<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Delaware<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Florida<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Georgia<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Hawaii<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Idaho<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Illinois<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Indiana<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Iowa<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Kansas<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Kentucky<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Louisiana<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Maine<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Maryland<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Massachusetts<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Michigan<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Minnesota<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Mississippi<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Missouri<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Montana<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Nebraska<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Nevada<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>New Hampshire<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>New Jersey<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>New Mexico<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>New York<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>North Carolina<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>North Dakota<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Ohio<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Oklahoma<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Oregon<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Pennsylvania<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Rhode Island<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>South Carolina<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>South Dakota<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Tennessee<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Texas<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Utah<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Vermont<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Virginia<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Washington<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>West Virginia<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Wisconsin<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Wyoming<span class="table-plus"> + </span></td>
             </tr>
           </table>
         </div>
@@ -276,53 +133,10 @@
           <table class="commoditiesTable">
             <tr>
               <th>Commodities Selection</th>
-              <th>Date Range</th>
-            </tr>
-            <tr>
-              <td>Corn</td>
-              <td>1959-2016<span class="table-plus"> + </span></td>
-              <span></span>
-            </tr>
-            <tr>
-              <td>Crude Oil</td>
-              <td>1983-2016<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Ethanol</td>
-              <td>2011-2016<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Gasoline</td>
-              <td>2006-2016<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Gold</td>
-              <td>1975-2016<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Hogs</td>
-              <td>1970-2016<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Live Cattle</td>
-              <td>1965-2016<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Natural Gas</td>
-              <td>1990-2016<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Soybeans</td>
-              <td>1970-2016<span class="table-plus"> + </span></td>
-            </tr>
-            <tr>
-              <td>Wheat</td>
-              <td>1959-2016<span class="table-plus"> + </span></td>
             </tr>
           </table>
         </div>
       </div>
-
       <div class="stat-holder">
         <h1>Statistics</h1>
         <div class="stat-box">
@@ -349,7 +163,6 @@
     <div class="container">
       <a id="source"></a>
       <h1>Source</h1>
-
       <div class="box-s">
      <div class="github-card" data-github="Mike-C25/RainingCows" data-width="400" data-height="153" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
